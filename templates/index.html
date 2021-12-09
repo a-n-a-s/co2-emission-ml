@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>CO2 Emission</title>
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluency/48/000000/leaf.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/fluency/48/000000/leaf.png"
+    />
 
     <link
       rel="stylesheet"
@@ -50,36 +54,6 @@
             justify-center
           "
         ></nav>
-
-        ><button
-          class="
-            inline-flex
-            items-center
-            bg-gray-100
-            border-0
-            py-1
-            px-3
-            focus:outline-none
-            hover:bg-gray-200
-            rounded
-            text-base
-            mt-4
-            md:mt-0
-          "
-        >
-          Conatct
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
       </div>
     </header>
     <div
@@ -156,8 +130,56 @@
         <p class="text-gray-700 font-semibold text-lg">{{ prediction_text }}</p>
       </form>
     </div>
-    <div>
-      <span>About The Page</span>
+    <div class="w-4/5 my-10 mx-auto text-gray-600">
+      <p class="text-center my-4 font-bold text-2xl">About The Page</p>
+      <p
+        class="
+          bg-white
+          p-4
+          rounded-lg
+          shadow-lg
+          leading-loose
+          tracking-wide
+          font-semibold
+          text-lg
+        "
+      >
+        This website is used to predict the CO<sub>2</sub> emission by a vehicle
+        with the details of Engine Size , Cylinders and Fuel. <br />
+        This page uses a ML model and flask as backend. <br />
+        The ML model is trained on 1607 types of different vehicle types and
+        model dataset.<br />
+        You can check the
+        <a
+          href="https://drive.google.com/file/d/1LtXNykHsQeDdgWGa_3qWGxz3iZPkKoxC/view?usp=sharing"
+          class="hover:text-blue-500"
+          >dataset here.</a
+        >
+        <br />
+        Python is used for ML . Packages like scikit-learn , pandas , numpy are
+        used .
+        <br />
+        The Training of the model is done through LinearRegression .
+        <br />
+        Pickle module is used to convert the ml.py to model.pkl so that it can
+        be used in website.
+        <br />
+        Flask is used as backend and the website is hosted on Heroku.
+        <br />
+        Html5 and Tailwind CSS is for frontend.
+        <br />
+        <a
+          href="https://github.com/a-n-a-s/co2-emission-ml"
+          class="hover:text-yellow-500"
+        >
+          Click to Github Repo
+        </a>
+        <br />
+        Thank You!!!
+      </p>
     </div>
+    <footer class="text-center p-5 text-green-700 font-semibold">
+      All Rights Reserved @Anas Mirza
+    </footer>
   </body>
 </html>
